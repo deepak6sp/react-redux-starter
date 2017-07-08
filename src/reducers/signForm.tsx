@@ -6,14 +6,11 @@
  *                             which carries type and payload
  * @return {Array}             a new state
  */
-export default function(state = [], action) {
+export default function(state : any = [], action: any) {
     switch (action.type) {
         case 'SUBMIT_BUTTON_CLICKED':
             return [...state, action.payload];
-            break;
         default:
             return state;
     }
-
-    return state;
 }

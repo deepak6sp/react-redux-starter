@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import * as React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {submitText} from '../../actions/signForm';
 
 import UI from '../../components/ui';
 
-class SignForm extends Component {
+class SignForm extends React.Component {
 
     constructor(props) {
         super(props);

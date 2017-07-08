@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-import Router from './routes/router.js';
+import Router from './router/index';
 import MainReducer from './reducers';
 
 import '../assets/main.scss';
@@ -21,6 +21,6 @@ ReactDOM.render(
 /**
  * This is required for webpack hot reloading
  */
-if (module.hot) {
-    module.hot.accept();
-}
+// if (module.hot) {
+//     module.hot.accept();
+// }
